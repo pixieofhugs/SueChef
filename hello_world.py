@@ -2,10 +2,6 @@
 from openai import OpenAI
 import os
 
-# Load the API key for the NHL (Hockey info) from an environment variable
-api_key = os.getenv("NHL_API_KEY")
-if not api_key:
-    raise ValueError("API key not found. Please check your environment variable.")
 
 
 
