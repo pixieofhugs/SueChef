@@ -6,3 +6,4 @@ Lib/
 ./.vscode/
 event_data.json
 game_data.json
+pyvenv.cfg
