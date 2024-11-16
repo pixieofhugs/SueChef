@@ -7,8 +7,6 @@ import json
 
 
 
-
-
 client = OpenAI(api_key=os.getenv("SUE_API_KEY"))
 
 completion = client.chat.completions.create(

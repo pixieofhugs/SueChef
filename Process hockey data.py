@@ -41,24 +41,8 @@ def parse_event(event):
     return event_str
 
 
-def print_event(event):
-    # Print formatted event information
-    if event_type == "goal":
-        print(f"[Goal] Period {period}, Minute {minute} - {team_name}")
-        print(f"   Scorer: {players}")
-        if assists:
-            print(f"   Assists: {assists}")
-        if comment:
-            print(f"   Comment: {comment}")
-    elif event_type == "penalty":
-        print(f"[Penalty] Period {period}, Minute {minute} - {team_name}")
-        print(f"   Player: {players}")
-        print(f"   Penalty: {comment}")
-    print()
-
 # Iterate and parse each event
-for event in events:
-    parse_event(event)
+events = [parse_event(event) for event in events]
 
 
 # dump the string of events into a file
