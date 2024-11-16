@@ -8,3 +8,4 @@ event_data.json
 game_data.json
 pyvenv.cfg
 .vscode
+parsed_events.txt
